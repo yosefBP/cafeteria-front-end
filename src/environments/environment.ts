@@ -4,21 +4,6 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://54.91.249.115/api',
-  MENU_ADMIN: [
-    {
-      name: 'Productos',
-      url_router: '/admin/dashboard/products',
-    },
-    {
-      name: 'Usuarios',
-      url_router: '/admin/dashboard/users',
-    },
-    {
-      name: 'Roles',
-      url_router: '/admin/dashboard/roles',
-    },
-  ]
 };
 
 /*
