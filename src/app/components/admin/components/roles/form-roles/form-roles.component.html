@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>{{nameForm}}</h1>
+<div mat-dialog-content>
+<form class="user was-validated" [formGroup]="rolForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre del Rol</mat-label>
+    <input matInput placeholder="" formControlName="rol">
+  </mat-form-field>
+</form>
+</div>
+
+<div mat-dialog-actions [align]="'end'">
+  <button style="margin-right: 10px;" type="button" class="btn btn-secondary"
+   [mat-dialog-close]="true">Cancelar</button>
+  <button type="submit" class="btn btn-primary" [mat-dialog-close]="true"
+   cdkFocusInitial (click)="adminRol()">{{name_button}}</button>
+</div>

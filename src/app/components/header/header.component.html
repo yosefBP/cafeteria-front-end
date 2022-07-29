@@ -1,0 +1,25 @@
+<header>
+  <div class="navbar navbar-dark bg-success bg-gradient flex-column flex-sm-row">
+    <div class="navbar-brand aling-item-center d-flex">
+      <i class="fas fa-store fa-lg" style="color:#F8F9F9;">&nbsp;
+        <strong style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Cafeteria KONECTA</strong>
+      </i>
+    </div>
+    <nav class="nav nav-justified" style="color:#F8F9F9;">
+      <a mat-button class="flex-sm-fill nav-link active" >Productos</a>
+      <a mat-button class="flex-sm-fill nav-link active" >Historial de compras</a>
+    </nav>
+    <button class="btn bg-gradient">
+      <i class='fas fa-shopping-cart fa-spin fa-lg' style="color:#F8F9F9;"></i>
+      <div style="font-size: 10px; color: #F8F9F9; margin-left: 4px;" class="badge bg-danger">0</div>
+    </button>
+    <div style="display:flex; justify-content:start; width:25%; align-items: center;">
+      <mat-icon>account_circle</mat-icon>&nbsp;
+      <span> {{user.nombre}} </span>
+    </div>
+    <button type="button" (click)="logout()" mat-icon-button class="example-icon logout-icon" aria-label="logout"
+      style="color:#F8F9F9;">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,42 @@
+<div class="container bg-white p-5">
+  <!-- Outer Row -->
+  <div class="row justify-content-center">
+      <div class="col-xl-9 col-lg-6 col-md-9 col-sm-9">
+          <div class="card o-hidden border-0 shadow-lg my-5">
+              <div class="card-body p-0">
+                  <!-- Nested Row within Card Body -->
+                  <div class="row justify-content-center">
+                      <img width="50%" [src]="login.image" alt="logo" class="img-fluid">
+                      <div class="col-lg-6">
+                          <div class="p-5" >
+                              <div class="text-center">
+                                  <h3 *ngIf="!spinner" class="mb-4">Iniciar Sesión</h3>
+                              </div>
+                              <!--Inicio de formulario-->
+                              <mat-spinner *ngIf="spinner" diameter="250" ></mat-spinner>
+                              <form *ngIf="!spinner" class="user was-validated" id="frmRegistrate" name="frmRegistrate" [formGroup]="loginForm" (ngSubmit)="loginUser($event)">
+                                  <div class="form-group row">
+                                      <div class="col-sm-12 mb-3 mb-sm-0">
+                                          <input type="email" class="form-control form-control-user" id="txtemail" style="font-size: 0.8rem; border-radius: 10rem; height: 45px;"
+                                            value="default@example.com" placeholder="Ingrese email" name="txtemail" maxlength="50" required formControlName="email">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <div class="col-sm-12 mb-3 mb-sm-0">
+                                          <input type="password" class="form-control form-control-user" id="txtPassword" style="font-size: 0.8rem; border-radius: 10rem; height: 45px;"
+                                              placeholder="Ingrese Contraseña" name="txtPassword" maxlength="50" required formControlName="password">
+                                      </div>
+                                  </div>
+                                  <div  class="form-group row justify-content-center">
+                                      <button type="submit" mat-raised-button id="btnGuardar">Login</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

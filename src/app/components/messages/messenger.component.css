@@ -1,0 +1,40 @@
+.bubble{
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  color:#fff;
+  background-color: #e9c214;
+  border-color: #e9c214;
+  padding-top: 26px;
+  padding-left: 16px;
+  margin-bottom: 2px;
+  height: 70px;
+  margin-left:20px;
+  text-align: center;
+  border-radius:8px;
+  float: right;
+  right: 1px;
+  width: 370px;
+}
+
+.bubble::after{
+  font-size: 15px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 31px;
+  margin-left: -31px;
+  border-top: 8px solid white;
+  border-bottom: 8px solid white;
+  border-right: 15px solid #e9c214;
+}
+
+#fatherMessages{
+  position: absolute;
+  width: 100px;
+  right: 1px;
+  z-index: 2000;
+  margin-top: 45px;
+  margin-top: 21px;
+  margin-right: 380px;
+}

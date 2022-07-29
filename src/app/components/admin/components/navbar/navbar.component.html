@@ -1,0 +1,14 @@
+
+  <mat-toolbar color="accent">
+    <span>Cafeteria KONECTA</span>
+    <span class="example-spacer"></span>
+    <button mat-button *ngFor="let item of menuAdmin" [routerLink]="item.url_router">{{item.name}}</button>
+    <span class="example-spacer"></span>
+    <div style="display:flex; justify-content:start; width:25%; align-items: center;">
+      <mat-icon>manage_accounts</mat-icon>&nbsp;
+      <span> {{user.nombre}} </span>
+    </div>
+    <button type="button" (click)="logout()" mat-icon-button class="example-icon logout-icon" aria-label="logout">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>

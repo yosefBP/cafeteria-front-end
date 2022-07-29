@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>{{nameForm}}</h1>
+<div mat-dialog-content>
+<form class="user was-validated" [formGroup]="productForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre producto</mat-label>
+    <input matInput placeholder="" formControlName="nombre_producto">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Referencia</mat-label>
+    <input matInput placeholder="" formControlName="referencia">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Precio</mat-label>
+    <input matInput placeholder="" formControlName="precio">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Categoria</mat-label>
+    <input matInput placeholder="" formControlName="categoria">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Stock</mat-label>
+    <input matInput placeholder="" formControlName="stock">
+  </mat-form-field>
+</form>
+</div>
+
+<div mat-dialog-actions [align]="'end'">
+  <button style="margin-right: 10px;" type="button" class="btn btn-secondary"
+   [mat-dialog-close]="true">Cancelar</button>
+  <button type="submit" class="btn btn-primary" [mat-dialog-close]="true"
+   cdkFocusInitial (click)="adminProduct()">{{name_button}}</button>
+</div>
+
