@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://54.91.249.115/api',
+  API_URL: 'http://184.73.21.79/api',
   MENU_ADMIN: [
     {
       name: 'Productos',
